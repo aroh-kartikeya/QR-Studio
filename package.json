@@ -1,17 +1,29 @@
 {
-  "dependencies": {
-    "fs": "^0.0.1-security",
-    "inquirer": "^9.3.7",
-    "qr-image": "^3.2.0"
-  },
-  "name": "2.4-qr-code-project",
+  "name": "qr-code-generator",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:frontend": "vite",
+    "dev:backend": "nodemon api/index.js",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node api/index.js"
   },
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "lucide-react": "^0.435.0",
+    "qrcode": "^1.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4",
+    "tailwindcss": "^4.0.0",
+    "vite": "^5.4.2"
+  }
 }

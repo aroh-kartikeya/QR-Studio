@@ -35,7 +35,7 @@ Users can generate QR codes from text or URLs, customize colors, and download th
 
 Clone the repository:
 
-git clone <repository-url>
+git clone https://github.com/aroh-kartikeya/QR-Studio.git
 cd qr-studio
 
 
@@ -72,11 +72,12 @@ src/
 
 ## Live Demo
 
-Add your Vercel URL here after deployment.
+https://qr-studio-iota.vercel.app/
 
 ## Screenshots
 
-Add screenshots here after deployment.
+![QR Studio Screenshot](./screenshots/homepage.png)
+
 
 ## Why I Built This
 
